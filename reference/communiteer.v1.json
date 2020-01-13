@@ -2,17 +2,19 @@
   "openapi": "3.0.0",
   "info": {
     "title": "communiteer",
-    "version": "1.0"
+    "version": "1.0",
+    "description": "API Specification for third party integration"
   },
   "servers": [
     {
-      "url": "http://localhost:3000"
+      "description": "",
+      "url": "staging.communiteer.org"
     }
   ],
   "paths": {
     "/api/communities/": {
       "get": {
-        "summary": "Get community lists",
+        "summary": "Get community list",
         "tags": [],
         "responses": {
           "200": {
@@ -22,7 +24,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "../models/Community.v1.json"
+                    "$ref": "../models/communities/Community.v1.json"
                   }
                 }
               }
@@ -34,7 +36,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "../models/Community.v1.json"
+                    "$ref": "../models/communities/Community.v1.json"
                   }
                 }
               }
@@ -46,7 +48,8 @@
           {
             "API Key - 1": []
           }
-        ]
+        ],
+        "description": "Retrieve all communities"
       }
     },
     "/api/communities/{community_id}": {
@@ -69,10 +72,13 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/Community.v1.json"
+                  "$ref": "../models/communities/Community.v1.json"
                 }
               }
             }
+          },
+          "404": {
+            "description": "Not Found"
           }
         },
         "operationId": "get-api-communities-community_id",
@@ -81,7 +87,66 @@
             "API Key - 1": []
           }
         ],
-        "requestBody": {}
+        "requestBody": {},
+        "description": "Retrieve specific community details"
+      }
+    },
+    "/api/projects/": {
+      "get": {
+        "summary": "Get project list",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/projects/Project.v1.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-projects",
+        "description": "Retrieve all available projects",
+        "security": [
+          {
+            "API Key - 1": []
+          }
+        ]
+      },
+      "parameters": []
+    },
+    "/api/projects/{project_id}": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "project_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get project details",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../models/projects/Project.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-projects-project_id"
       }
     }
   },
