@@ -1,0 +1,61 @@
+{
+  "title": "Community",
+  "type": "object",
+  "description": "",
+  "x-examples": {},
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "welcome_message": {
+      "type": "string"
+    },
+    "intro_message": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "is_invite_only": {
+      "type": "boolean"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "intro_media": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "width": {
+          "type": "integer"
+        }
+      }
+    },
+    "title": {
+      "type": "string"
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "$ref": "./Goal.v1.json"
+      }
+    },
+    "type": {
+      "type": "array",
+      "items": {
+        "$ref": "./CommunityType.v1.json"
+      }
+    }
+  }
+}

@@ -14,7 +14,33 @@
       "get": {
         "summary": "Get community lists",
         "tags": [],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/Community.v1.json"
+                  }
+                }
+              }
+            }
+          },
+          "": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/Community.v1.json"
+                  }
+                }
+              }
+            }
+          }
+        },
         "operationId": "get-api-communities",
         "security": [
           {
@@ -37,13 +63,25 @@
       "get": {
         "summary": "Get community details",
         "tags": [],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../models/Community.v1.json"
+                }
+              }
+            }
+          }
+        },
         "operationId": "get-api-communities-community_id",
         "security": [
           {
             "API Key - 1": []
           }
-        ]
+        ],
+        "requestBody": {}
       }
     }
   },
