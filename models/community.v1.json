@@ -1,0 +1,49 @@
+{
+  "title": "Community",
+  "type": "object",
+  "x-examples": {},
+  "description": "",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "width": {
+          "type": "integer"
+        }
+      }
+    },
+    "intro_media": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "is_invite_only": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    },
+    "intro_message": {
+      "type": "string"
+    },
+    "welcome_message": {
+      "type": "string"
+    }
+  }
+}

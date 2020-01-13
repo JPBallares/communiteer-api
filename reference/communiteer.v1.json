@@ -1,0 +1,60 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "communiteer",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/api/communities/": {
+      "get": {
+        "summary": "Get community lists",
+        "tags": [],
+        "responses": {},
+        "operationId": "get-api-communities",
+        "security": [
+          {
+            "API Key - 1": []
+          }
+        ]
+      }
+    },
+    "/api/communities/{community_id}": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "community_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get community details",
+        "tags": [],
+        "responses": {},
+        "operationId": "get-api-communities-community_id",
+        "security": [
+          {
+            "API Key - 1": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "API Key - 1": {
+        "name": "API Key",
+        "type": "apiKey",
+        "in": "header",
+        "description": "Use api token that will be generated"
+      }
+    }
+  }
+}

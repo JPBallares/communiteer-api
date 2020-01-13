@@ -1,0 +1,7 @@
+{
+  "title": "communities",
+  "type": "array",
+  "items": {
+    "$ref": "./community.v1.json"
+  }
+}
