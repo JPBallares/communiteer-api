@@ -1,0 +1,12 @@
+{
+  "title": "CommunityAttributes",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

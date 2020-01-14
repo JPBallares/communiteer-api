@@ -1,0 +1,59 @@
+{
+  "title": "UserProfile",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "secondary_email": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "area_code": {
+      "type": "string"
+    },
+    "profile_picture": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "goals": {
+      "type": [
+        "string",
+        "array"
+      ],
+      "items": {
+        "$ref": "../communities/Goal.v1.json"
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "$ref": "../communities/CommunityAttributes.v1.json"
+      }
+    }
+  }
+}

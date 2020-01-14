@@ -274,7 +274,7 @@
           }
         },
         "operationId": "get-api-communities-community_d-projects",
-        "description": "Get all projects within the specified community",
+        "description": "Retrieve all projects within the specified community",
         "security": [
           {
             "API Key - 1": []
@@ -312,6 +312,173 @@
             "in": "query",
             "name": "goals",
             "description": "Filter projects within the community that matches the goals"
+          }
+        ]
+      }
+    },
+    "/api/users": {
+      "get": {
+        "summary": "Get users list",
+        "tags": [
+          "Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/accounts/UserProfile.v1.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-users",
+        "description": "Retrieve all users.",
+        "security": [
+          {
+            "API Key - 1": []
+          }
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "name",
+            "description": "Filter the users base on matching name"
+          },
+          {
+            "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "skills",
+            "description": "Filter the users with the specified skills"
+          },
+          {
+            "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "goals",
+            "description": "Filter the users with the specified goals"
+          }
+        ]
+      }
+    },
+    "/api/users/{user_id}": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "user_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get user profile",
+        "tags": [
+          "Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../models/accounts/UserProfile.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-users-user_id",
+        "description": "Retrieve the information for specific user",
+        "security": [
+          {
+            "API Key - 1": []
+          }
+        ]
+      }
+    },
+    "/api/communities/{community_id}/users": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "community_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get community members",
+        "tags": [
+          "Community"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/accounts/UserProfile.v1.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-communities-community_id-users",
+        "description": "Retrieve all the users inside the community.",
+        "security": [
+          {
+            "API Key - 1": []
+          }
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "name",
+            "description": "Filter the users by the specified name"
+          },
+          {
+            "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "goals",
+            "description": "Filter the users with the specified skills"
+          },
+          {
+            "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "skills",
+            "description": "Filter the users with the specified goals"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "role",
+            "description": "Filter the users by role e.g Admin or Supporter"
           }
         ]
       }
