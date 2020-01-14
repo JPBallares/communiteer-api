@@ -52,7 +52,49 @@
             "API Key - 1": []
           }
         ],
-        "description": "Retrieve all communities"
+        "description": "Retrieve all communities",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "title",
+            "description": "Filter communties that matches the specified title"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "description",
+            "description": "Filter communities that vision mission contains the text specified"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "welcome_message",
+            "description": "Filter communities that welcome messages contains the text specified"
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "is_invite_only",
+            "description": "Filter private or open communities"
+          },
+          {
+            "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "goals",
+            "description": "Filter communities that matches the goals"
+          }
+        ]
       }
     },
     "/api/communities/{community_id}": {
@@ -145,11 +187,19 @@
           },
           {
             "schema": {
-              "type": "string"
+              "type": "boolean"
             },
             "in": "query",
             "name": "is_closed",
             "description": "Filter results by completed or not completed projects"
+          },
+          {
+            "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "goals",
+            "description": "Filter projects that matches the goals"
           }
         ]
       },
@@ -254,6 +304,14 @@
             "in": "query",
             "name": "is_closed",
             "description": "Filter results by completed or not completed projects"
+          },
+          {
+            "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "goals",
+            "description": "Filter projects within the community that matches the goals"
           }
         ]
       }
