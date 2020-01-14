@@ -15,7 +15,10 @@
     "/api/communities/": {
       "get": {
         "summary": "Get community list",
-        "tags": [],
+        "tags": [
+          "Community",
+          "End Points"
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -65,7 +68,10 @@
       ],
       "get": {
         "summary": "Get community details",
-        "tags": [],
+        "tags": [
+          "Community",
+          "End Points"
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -94,7 +100,10 @@
     "/api/projects/": {
       "get": {
         "summary": "Get project list",
-        "tags": [],
+        "tags": [
+          "Project",
+          "End Points"
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -116,6 +125,32 @@
           {
             "API Key - 1": []
           }
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "date_start",
+            "description": "Filter results by given date range"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "date_end",
+            "description": "Filter results by given date range"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "is_closed",
+            "description": "Filter results by completed or not completed projects"
+          }
         ]
       },
       "parameters": []
@@ -133,7 +168,10 @@
       ],
       "get": {
         "summary": "Get project details",
-        "tags": [],
+        "tags": [
+          "Project",
+          "End Points"
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -144,9 +182,80 @@
                 }
               }
             }
+          },
+          "404": {
+            "description": "Not Found"
           }
         },
-        "operationId": "get-api-projects-project_id"
+        "operationId": "get-api-projects-project_id",
+        "description": "Retrieve specific project details"
+      }
+    },
+    "/api/communities/{community_id}/projects": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "community_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get community projects",
+        "tags": [
+          "Community",
+          "End Points"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/projects/Project.v1.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-communities-community_d-projects",
+        "description": "Get all projects within the specified community",
+        "security": [
+          {
+            "API Key - 1": []
+          }
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "date_start",
+            "description": "Filter results by given date range"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "date_end",
+            "description": "Filter results by given date range"
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "is_closed",
+            "description": "Filter results by completed or not completed projects"
+          }
+        ]
       }
     }
   },
@@ -158,6 +267,7 @@
         "in": "header",
         "description": "Use api token that will be generated"
       }
-    }
+    },
+    "schemas": {}
   }
 }

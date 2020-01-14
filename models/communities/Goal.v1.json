@@ -1,5 +1,5 @@
 {
-  "title": "Goal.v1.json",
+  "title": "Goal",
   "type": "object",
   "properties": {
     "id": {
