@@ -93,6 +93,36 @@
             "in": "query",
             "name": "goals",
             "description": "Filter communities that matches the goals"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "id",
+                "createddate",
+                "updateddate"
+              ],
+              "maxLength": 20
+            },
+            "in": "query",
+            "name": "filter",
+            "description": "Identify the range filter"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "lt",
+            "description": "Start range for filter (only needed if using filter as param)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "gt",
+            "description": "End range for filter (only needed if using filter as param)"
           }
         ]
       }
@@ -200,6 +230,36 @@
             "in": "query",
             "name": "goals",
             "description": "Filter projects that matches the goals"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "id",
+                "createddate",
+                "updateddate"
+              ],
+              "maxLength": 20
+            },
+            "in": "query",
+            "name": "filter",
+            "description": "Identify the range filter"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "lt",
+            "description": "Start range for filter (only needed if using filter as param)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "gt",
+            "description": "End range for filter (only needed if using filter as param)"
           }
         ]
       },
@@ -312,6 +372,36 @@
             "in": "query",
             "name": "goals",
             "description": "Filter projects within the community that matches the goals"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "id",
+                "createddate",
+                "updateddate"
+              ],
+              "maxLength": 20
+            },
+            "in": "query",
+            "name": "filter",
+            "description": "Identify the range filter"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "lt",
+            "description": "Start range for filter (only needed if using filter as param)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "gt",
+            "description": "End range for filter (only needed if using filter as param)"
           }
         ]
       }
@@ -368,6 +458,36 @@
             "in": "query",
             "name": "goals",
             "description": "Filter the users with the specified goals"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "id",
+                "createddate",
+                "updateddate"
+              ],
+              "maxLength": 20
+            },
+            "in": "query",
+            "name": "filter",
+            "description": "Identify the range filter"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "lt",
+            "description": "Start range for filter (only needed if using filter as param)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "gt",
+            "description": "End range for filter (only needed if using filter as param)"
           }
         ]
       }
@@ -479,6 +599,36 @@
             "in": "query",
             "name": "role",
             "description": "Filter the users by role e.g Admin or Supporter"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "id",
+                "createddate",
+                "updateddate"
+              ],
+              "maxLength": 20
+            },
+            "in": "query",
+            "name": "filter",
+            "description": "Identify the range filter"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "lt",
+            "description": "Start range for filter (only needed if using filter as param)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "gt",
+            "description": "End range for filter (only needed if using filter as param)"
           }
         ]
       }

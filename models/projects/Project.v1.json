@@ -1,6 +1,7 @@
 {
   "title": "Project",
   "type": "object",
+  "x-examples": {},
   "properties": {
     "id": {
       "type": "integer"
@@ -47,6 +48,5 @@
         "$ref": "../communities/Community.v1.json"
       }
     }
-  },
-  "x-examples": {}
+  }
 }
