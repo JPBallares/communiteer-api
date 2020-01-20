@@ -422,6 +422,50 @@
                   "items": {
                     "$ref": "../models/accounts/UserProfile.v1.json"
                   }
+                },
+                "examples": {
+                  "Example": {
+                    "value": [
+                      {
+                        "id": 335,
+                        "first_name": "Dev",
+                        "last_name": "Justine",
+                        "date_joined": "2019-10-02T12:32:12+10:00",
+                        "email": "devjustine@gmail.com",
+                        "profile_picture": "https://comblob02.blob.core.windows.net/media-communiteer-com/Artboard_10.5x_3rFmZxK.png",
+                        "preferred_name": "Dev Justine",
+                        "secondary_email": null,
+                        "mobile": null,
+                        "linkedin": "",
+                        "region_nation": null,
+                        "region_nation_subdivision": null,
+                        "area_code": null,
+                        "last_login": "2019-10-24T23:40:59+11:00",
+                        "is_onboarded": false,
+                        "attributes": [],
+                        "goals": []
+                      },
+                      {
+                        "id": 343,
+                        "first_name": "Zenad",
+                        "last_name": "Scarlet",
+                        "date_joined": "2019-10-29T12:29:07+11:00",
+                        "email": "zenad.scarlet@gmail.com",
+                        "profile_picture": null,
+                        "preferred_name": "Zenad",
+                        "secondary_email": null,
+                        "mobile": null,
+                        "linkedin": "",
+                        "region_nation": null,
+                        "region_nation_subdivision": null,
+                        "area_code": null,
+                        "last_login": "2020-01-15T17:39:13.728925+11:00",
+                        "is_onboarded": true,
+                        "attributes": [],
+                        "goals": []
+                      }
+                    ]
+                  }
                 }
               }
             }
@@ -554,6 +598,50 @@
                   "type": "array",
                   "items": {
                     "$ref": "../models/accounts/UserProfile.v1.json"
+                  }
+                },
+                "examples": {
+                  "Example": {
+                    "value": [
+                      {
+                        "id": 335,
+                        "first_name": "Dev",
+                        "last_name": "Justine",
+                        "date_joined": "2019-10-02T12:32:12+10:00",
+                        "email": "devjustine@gmail.com",
+                        "profile_picture": "https://comblob02.blob.core.windows.net/media-communiteer-com/Artboard_10.5x_3rFmZxK.png",
+                        "preferred_name": "Dev Justine",
+                        "secondary_email": null,
+                        "mobile": null,
+                        "linkedin": "",
+                        "region_nation": null,
+                        "region_nation_subdivision": null,
+                        "area_code": null,
+                        "last_login": "2019-10-24T23:40:59+11:00",
+                        "is_onboarded": false,
+                        "attributes": [],
+                        "goals": []
+                      },
+                      {
+                        "id": 343,
+                        "first_name": "Zenad",
+                        "last_name": "Scarlet",
+                        "date_joined": "2019-10-29T12:29:07+11:00",
+                        "email": "zenad.scarlet@gmail.com",
+                        "profile_picture": null,
+                        "preferred_name": "Zenad",
+                        "secondary_email": null,
+                        "mobile": null,
+                        "linkedin": "",
+                        "region_nation": null,
+                        "region_nation_subdivision": null,
+                        "area_code": null,
+                        "last_login": "2020-01-15T17:39:13.728925+11:00",
+                        "is_onboarded": true,
+                        "attributes": [],
+                        "goals": []
+                      }
+                    ]
                   }
                 }
               }
