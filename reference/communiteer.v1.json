@@ -727,8 +727,8 @@
               "type": "string",
               "enum": [
                 "id",
-                "createddate",
-                "updateddate"
+                "datejoined",
+                "lastlogin"
               ],
               "maxLength": 20
             },
