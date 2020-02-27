@@ -767,7 +767,7 @@
         }
       ],
       "get": {
-        "summary": "Retrieve the members of the projects.",
+        "summary": "Get project members",
         "tags": [
           "Project",
           "Users",
