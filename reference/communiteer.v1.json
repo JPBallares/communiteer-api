@@ -896,6 +896,115 @@
           }
         ]
       }
+    },
+    "/api/projects/{project_id}/tasks": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "project_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get project tasks",
+        "tags": [
+          "Project",
+          "Tasks",
+          "End Points"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../models/communities/Tasks.v1.json"
+                },
+                "examples": {
+                  "example-1": {}
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-projects-project_id-tasks",
+        "description": "Retrieve list of tasks in the project.",
+        "security": [
+          {
+            "API Key - 1": []
+          }
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "is_closed",
+            "description": "Filter completed/active tasks."
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "is_discontinued",
+            "description": "Filter hidden/visible tasks."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "title",
+            "description": "Filter the tasks base on title."
+          }
+        ]
+      }
+    },
+    "/api/user/{user_id}/tasks": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "user_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get user tasks",
+        "tags": [
+          "Users",
+          "Tasks",
+          "End Points"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "task": {
+                      "$ref": "../models/communities/Tasks.v1.json"
+                    },
+                    "hours_worked": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-user-user_id-tasks"
+      }
     }
   },
   "components": {

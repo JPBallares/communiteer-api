@@ -1,0 +1,27 @@
+{
+  "title": "Tasks.v1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "is_closed": {
+      "type": "boolean"
+    },
+    "is_discontinued": {
+      "type": "boolean"
+    },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "$ref": "./CommunityAttributes.v1.json"
+      }
+    }
+  }
+}
