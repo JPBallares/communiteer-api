@@ -40,20 +40,11 @@
         }
       }
     },
-    "goals": {
-      "type": [
-        "string",
-        "array"
-      ],
-      "items": {
-        "$ref": "../communities/Goal.v1.json"
-      }
+    "goals[]": {
+      "$ref": "../communities/Goal.v1.json"
     },
-    "skills": {
-      "type": "array",
-      "items": {
-        "$ref": "../communities/CommunityAttributes.v1.json"
-      }
+    "skills[]": {
+      "$ref": "../communities/CommunityAttributes.v1.json"
     }
   }
 }

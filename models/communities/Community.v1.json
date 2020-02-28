@@ -45,17 +45,11 @@
     "title": {
       "type": "string"
     },
-    "goals": {
-      "type": "array",
-      "items": {
-        "$ref": "./Goal.v1.json"
-      }
+    "goals[]": {
+      "$ref": "./Goal.v1.json"
     },
-    "type": {
-      "type": "array",
-      "items": {
-        "$ref": "./CommunityType.v1.json"
-      }
+    "type[]": {
+      "$ref": "./CommunityType.v1.json"
     }
   }
 }

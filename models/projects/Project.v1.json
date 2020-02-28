@@ -36,17 +36,11 @@
     "is_closed": {
       "type": "boolean"
     },
-    "goals": {
-      "type": "array",
-      "items": {
-        "$ref": "../communities/Goal.v1.json"
-      }
+    "goals[]": {
+      "$ref": "../communities/Goal.v1.json"
     },
-    "communities": {
-      "type": "array",
-      "items": {
-        "$ref": "../communities/Community.v1.json"
-      }
+    "communities[]": {
+      "$ref": "../communities/Community.v1.json"
     }
   }
 }

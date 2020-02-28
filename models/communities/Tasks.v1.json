@@ -17,11 +17,8 @@
     "is_discontinued": {
       "type": "boolean"
     },
-    "attributes": {
-      "type": "array",
-      "items": {
-        "$ref": "./CommunityAttributes.v1.json"
-      }
+    "attributes[]": {
+      "$ref": "./CommunityAttributes.v1.json"
     }
   }
 }
