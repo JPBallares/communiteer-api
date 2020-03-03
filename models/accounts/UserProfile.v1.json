@@ -45,6 +45,9 @@
     },
     "skills[]": {
       "$ref": "../communities/CommunityAttributes.v1.json"
+    },
+    "tasks_update_time ": {
+      "type": "string"
     }
   }
 }

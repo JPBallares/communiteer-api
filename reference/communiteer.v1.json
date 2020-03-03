@@ -25,10 +25,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "../models/communities/Community.v1.json"
-                  }
+                  "$ref": "../models/communities/Community.v1.json"
                 }
               }
             }
@@ -553,6 +550,14 @@
             "in": "query",
             "name": "gt",
             "description": "End range for filter (only needed if using filter as param)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "task_updatedate",
+            "description": "Filter the users with the last task update"
           }
         ]
       }
