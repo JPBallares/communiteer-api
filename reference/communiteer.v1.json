@@ -180,6 +180,36 @@
               "application/json": {
                 "schema": {
                   "$ref": "../models/projects/Project.v1.json"
+                },
+                "examples": {
+                  "Example": {
+                    "value": [
+                      {
+                        "id": 129,
+                        "created_time": "2019-09-09T11:51:11.959200+10:00",
+                        "modified_time": "2019-09-12T11:22:49.124735+10:00",
+                        "is_active": true,
+                        "welcome_message": "Welcome to this project!",
+                        "slug": "project-title",
+                        "title": "Project Title",
+                        "description": "<p>This Project aims to... test</p>",
+                        "date_start": "2019-09-09T11:45:41.599000+10:00",
+                        "date_end": "2019-09-09T11:45:41.599000+10:00"
+                      },
+                      {
+                        "id": 130,
+                        "created_time": "2019-09-20T19:47:20.588069+10:00",
+                        "modified_time": "2019-09-23T18:18:50.114086+10:00",
+                        "is_active": true,
+                        "welcome_message": "Welcome to this project!",
+                        "slug": "test-rest-tr",
+                        "title": "test rest tr",
+                        "description": "<p>test test</p>",
+                        "date_start": "2019-09-20T19:44:54.525000+10:00",
+                        "date_end": "2019-09-20T19:44:54.525000+10:00"
+                      }
+                    ]
+                  }
                 }
               }
             }
@@ -913,9 +943,7 @@
                 "schema": {
                   "$ref": "../models/communities/Tasks.v1.json"
                 },
-                "examples": {
-                  "example-1": {}
-                }
+                "examples": {}
               }
             }
           }
