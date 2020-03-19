@@ -19,6 +19,18 @@
     },
     "attributes[]": {
       "$ref": "./CommunityAttributes.v1.json"
+    },
+    "updated_time": {
+      "type": "string",
+      "description": "Date and time when the task was last updated"
+    },
+    "created_time": {
+      "type": "string",
+      "description": "Date and time when the task was created"
+    },
+    "estimated_time": {
+      "type": "number",
+      "description": "Estimated hours to finish the task"
     }
   }
 }
