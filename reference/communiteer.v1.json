@@ -313,9 +313,110 @@
               "application/json": {
                 "schema": {
                   "$ref": "../models/projects/Project.v1.json"
+                },
+                "examples": {
+                  "Example": {
+                    "value": {
+                      "id": 155,
+                      "accounts": [],
+                      "communities": [
+                        {
+                          "id": 84,
+                          "created_time": "2019-09-24T12:07:57.017527+10:00",
+                          "modified_time": "2019-10-04T17:01:44.538607+10:00",
+                          "is_active": true,
+                          "title": "New Community",
+                          "logo": "https://comblob02.blob.core.windows.net/media-communiteer-com/background_2_3vVpZcR.PNG",
+                          "website_url": "",
+                          "is_invite_only": false,
+                          "description": "<p>To test is to pass</p>",
+                          "intro_message": "",
+                          "welcome_message": "<p>Welcome message</p>"
+                        }
+                      ],
+                      "created_time": "2020-03-17T23:04:31.757123+11:00",
+                      "modified_time": "2020-03-17T23:04:31.757156+11:00",
+                      "is_active": true,
+                      "welcome_message": "<p>Welcome to this project!</p>",
+                      "slug": "superuser-create-project",
+                      "title": "Superuser create project",
+                      "description": "<p>This overview is over</p>",
+                      "date_start": "2020-03-17T22:52:35.784000+11:00",
+                      "date_end": "2020-03-17T22:52:35.784000+11:00",
+                      "date_closed": null,
+                      "is_recurring": false,
+                      "is_draft": false,
+                      "is_closed": false,
+                      "created_by": 334,
+                      "modified_by": 334,
+                      "agreement": 1,
+                      "goals": [],
+                      "organisations": [],
+                      "programs": [
+                        101
+                      ],
+                      "tasks": [
+                        {
+                          "id": 334,
+                          "created_time": "2020-03-17T23:04:32.240937+11:00",
+                          "modified_time": "2020-03-19T14:35:55.299430+11:00",
+                          "is_active": true,
+                          "title": "Start project",
+                          "description": "<p>This should be the first face-to-face or phone catchup between admins and volunteers. At the end of the catchup, everyone should agree to a list of tasks to be completed. Create these tasks in this project to track your progress.</p>",
+                          "created_by_id": null,
+                          "modified_by_id": null,
+                          "is_closed": false,
+                          "order": 3,
+                          "is_discontinued": false
+                        },
+                        {
+                          "id": 335,
+                          "created_time": "2020-03-17T23:04:32.252850+11:00",
+                          "modified_time": "2020-03-17T23:04:32.252882+11:00",
+                          "is_active": true,
+                          "title": "Read background info",
+                          "description": "<p>Admins should upload information here for volunteers to read. Volunteers should read the information posted to prepare themselves for the project before it starts.</p>",
+                          "created_by_id": null,
+                          "modified_by_id": null,
+                          "is_closed": false,
+                          "order": 1,
+                          "is_discontinued": false
+                        },
+                        {
+                          "id": 336,
+                          "created_time": "2020-03-17T23:04:32.541679+11:00",
+                          "modified_time": "2020-03-19T14:35:55.295826+11:00",
+                          "is_active": true,
+                          "title": "Sample task",
+                          "description": "<p>This is a sample task. Create more if the project requires it. Volunteers should upload files to this task to be reviewed. Once the admin is happy with the task, the admin should mark the task as completed.</p>",
+                          "created_by_id": null,
+                          "modified_by_id": null,
+                          "is_closed": false,
+                          "order": 2,
+                          "is_discontinued": false
+                        },
+                        {
+                          "id": 337,
+                          "created_time": "2020-03-17T23:04:32.560559+11:00",
+                          "modified_time": "2020-03-17T23:04:32.560593+11:00",
+                          "is_active": true,
+                          "title": "Debrief session",
+                          "description": "<p>Once your tasks are completed, this should be a face-to-face or phone catchup to review the work completed. This is also a good opportunity for the admins to thank and recognise the contributions of the volunteers.</p>",
+                          "created_by_id": null,
+                          "modified_by_id": null,
+                          "is_closed": false,
+                          "order": 4,
+                          "is_discontinued": false
+                        }
+                      ]
+                    }
+                  }
                 }
               }
             }
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "404": {
             "description": "Not Found"
