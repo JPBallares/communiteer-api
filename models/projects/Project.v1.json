@@ -41,6 +41,9 @@
     },
     "communities[]": {
       "$ref": "../communities/Community.v1.json"
+    },
+    "tasks[]": {
+      "$ref": "../communities/Tasks.v1.json"
     }
   }
 }
