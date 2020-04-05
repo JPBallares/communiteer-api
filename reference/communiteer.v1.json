@@ -1124,6 +1124,62 @@
         },
         "operationId": "get-api-user-user_id-tasks"
       }
+    },
+    "/api-auth-token/": {
+      "post": {
+        "summary": "Retrieve Auth Token",
+        "tags": [
+          "Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "Example": {
+                    "value": {
+                      "token": "9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "post-api-auth-token",
+        "description": "",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "description": "this field will be the email of the user"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "Example": {}
+              }
+            }
+          },
+          "description": "Provide post data with email and password"
+        }
+      }
     }
   },
   "components": {
