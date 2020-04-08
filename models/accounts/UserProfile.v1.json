@@ -81,7 +81,27 @@
           "tasks": {
             "type": "array",
             "items": {
-              "type": "object"
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "created_time": {
+                  "type": "string"
+                },
+                "modified_time": {
+                  "type": "string"
+                },
+                "is_active": {
+                  "type": "string"
+                },
+                "opportunity_id": {
+                  "type": "string"
+                },
+                "time_spent": {
+                  "type": "string"
+                }
+              }
             }
           }
         }
