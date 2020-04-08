@@ -48,6 +48,44 @@
     },
     "tasks_update_time ": {
       "type": "string"
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "is_active": {
+            "type": "string"
+          },
+          "welcome_message": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date_start": {
+            "type": "string"
+          },
+          "date_end": {
+            "type": "string"
+          },
+          "tasks": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
     }
   }
 }
