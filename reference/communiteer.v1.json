@@ -46,7 +46,7 @@
         "operationId": "get-api-communities",
         "security": [
           {
-            "API Key - 1": []
+            "Authorization": []
           }
         ],
         "description": "Retrieve all communities",
@@ -159,7 +159,7 @@
         "operationId": "get-api-communities-community_id",
         "security": [
           {
-            "API Key - 1": []
+            "Authorization": []
           }
         ],
         "requestBody": {},
@@ -219,7 +219,7 @@
         "description": "Retrieve all available projects",
         "security": [
           {
-            "API Key - 1": []
+            "Authorization": []
           }
         ],
         "parameters": [
@@ -489,7 +489,7 @@
         "description": "Retrieve all projects within the specified community",
         "security": [
           {
-            "API Key - 1": []
+            "Authorization": []
           }
         ],
         "parameters": [
@@ -632,7 +632,7 @@
         "description": "Retrieve all users.",
         "security": [
           {
-            "API Key - 1": []
+            "Authorization": []
           }
         ],
         "parameters": [
@@ -837,7 +837,7 @@
         "description": "Retrieve the information for specific user",
         "security": [
           {
-            "API Key - 1": []
+            "Authorization": []
           }
         ]
       }
@@ -922,7 +922,7 @@
         "description": "Retrieve all the users inside the community.",
         "security": [
           {
-            "API Key - 1": []
+            "Authorization": []
           }
         ],
         "parameters": [
@@ -1069,7 +1069,7 @@
         "description": "Retrieve the members of the project.",
         "security": [
           {
-            "API Key - 1": []
+            "Authorization": []
           }
         ],
         "parameters": [
@@ -1165,7 +1165,7 @@
         "description": "Retrieve list of tasks in the project.",
         "security": [
           {
-            "API Key - 1": []
+            "Authorization": []
           }
         ],
         "parameters": [
@@ -1327,8 +1327,8 @@
   },
   "components": {
     "securitySchemes": {
-      "API Key - 1": {
-        "name": "API Key",
+      "Authorization": {
+        "name": "Authorization",
         "type": "apiKey",
         "in": "header",
         "description": "Use api token that will be generated"
