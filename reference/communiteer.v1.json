@@ -1268,7 +1268,7 @@
         "operationId": "get-api-user-user_id-tasks"
       }
     },
-    "/api-auth-token/": {
+    "/api/api-auth-token/": {
       "post": {
         "summary": "Retrieve Auth Token",
         "tags": [
@@ -1322,7 +1322,8 @@
           },
           "description": "Provide post data with email and password"
         }
-      }
+      },
+      "parameters": []
     }
   },
   "components": {
