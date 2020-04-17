@@ -8,7 +8,7 @@
   "servers": [
     {
       "description": "",
-      "url": "staging.communiteer.org"
+      "url": "https://staging.communiteer.org"
     }
   ],
   "paths": {
