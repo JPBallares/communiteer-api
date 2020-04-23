@@ -423,7 +423,12 @@
           }
         },
         "operationId": "get-api-projects-project_id",
-        "description": "Retrieve specific project details"
+        "description": "Retrieve specific project details",
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
       }
     },
     "/api/communities/{community_id}/projects": {
@@ -1265,7 +1270,12 @@
             }
           }
         },
-        "operationId": "get-api-user-user_id-tasks"
+        "operationId": "get-api-user-user_id-tasks",
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
       }
     },
     "/api/api-auth-token/": {
