@@ -317,96 +317,126 @@
                 "examples": {
                   "Example": {
                     "value": {
-                      "id": 155,
-                      "accounts": [],
+                      "id": 241,
+                      "accounts": [
+                        {
+                          "id": 935,
+                          "first_name": "",
+                          "last_name": "",
+                          "date_joined": "2020-02-12T17:28:29.200539+11:00",
+                          "email": "mahi@seabinproject.com",
+                          "profile_picture": null,
+                          "preferred_name": "Mahi",
+                          "secondary_email": null,
+                          "mobile": "0406305083",
+                          "linkedin": null,
+                          "region_nation": null,
+                          "region_nation_subdivision": null,
+                          "area_code": null,
+                          "last_login": "2020-04-01T16:12:09.655323+11:00",
+                          "is_onboarded": true,
+                          "attributes": [],
+                          "goals": [],
+                          "task_updatedate": null
+                        },
+                        {
+                          "id": 948,
+                          "first_name": "",
+                          "last_name": "",
+                          "date_joined": "2020-02-22T14:37:15.570601+11:00",
+                          "email": "austindinh@me.com",
+                          "profile_picture": null,
+                          "preferred_name": "Austin Dinh",
+                          "secondary_email": null,
+                          "mobile": "0224385968",
+                          "linkedin": null,
+                          "region_nation": null,
+                          "region_nation_subdivision": null,
+                          "area_code": null,
+                          "last_login": "2020-04-15T12:51:58.015660+10:00",
+                          "is_onboarded": true,
+                          "attributes": [],
+                          "goals": [],
+                          "task_updatedate": null
+                        },
+                        {
+                          "id": 1017,
+                          "first_name": "",
+                          "last_name": "",
+                          "date_joined": "2020-04-12T23:02:01.201633+10:00",
+                          "email": "kankyb03@gmail.com",
+                          "profile_picture": null,
+                          "preferred_name": "kanky",
+                          "secondary_email": null,
+                          "mobile": "",
+                          "linkedin": null,
+                          "region_nation": null,
+                          "region_nation_subdivision": null,
+                          "area_code": null,
+                          "last_login": "2020-04-12T23:02:06.744239+10:00",
+                          "is_onboarded": true,
+                          "attributes": [
+                            58,
+                            51,
+                            54,
+                            52,
+                            30
+                          ],
+                          "goals": [],
+                          "task_updatedate": "2020-03-11T00:55:14.193464Z"
+                        }
+                      ],
                       "communities": [
                         {
-                          "id": 84,
-                          "created_time": "2019-09-24T12:07:57.017527+10:00",
-                          "modified_time": "2019-10-04T17:01:44.538607+10:00",
+                          "id": 132,
+                          "created_time": "2020-03-25T17:06:21.872279+11:00",
+                          "modified_time": "2020-03-31T12:18:08.300321+11:00",
                           "is_active": true,
-                          "title": "New Community",
-                          "logo": "https://comblob02.blob.core.windows.net/media-communiteer-com/background_2_3vVpZcR.PNG",
+                          "title": "Seabin Project",
+                          "logo": "https://comblob02.blob.core.windows.net/media-communiteer-com/f1cd12eb5bc9e878eef22d3edce88cc9_yhk35w3.jpg",
                           "website_url": "",
                           "is_invite_only": false,
-                          "description": "<p>To test is to pass</p>",
+                          "description": "<h2><strong style=\"color: rgb(0, 102, 204);\">CLEANING UP OUR OCEANS ONE MARINA AT A TIME</strong></h2><p><br></p><p>Main contact: Mahi Paquette</p>",
                           "intro_message": "",
                           "welcome_message": "<p>Welcome message</p>"
                         }
                       ],
-                      "created_time": "2020-03-17T23:04:31.757123+11:00",
-                      "modified_time": "2020-03-17T23:04:31.757156+11:00",
+                      "created_time": "2019-12-11T14:55:15.064263+11:00",
+                      "modified_time": "2020-03-31T12:41:48.249250+11:00",
                       "is_active": true,
-                      "welcome_message": "<p>Welcome to this project!</p>",
-                      "slug": "superuser-create-project",
-                      "title": "Superuser create project",
-                      "description": "<p>This overview is over</p>",
-                      "date_start": "2020-03-17T22:52:35.784000+11:00",
-                      "date_end": "2020-03-17T22:52:35.784000+11:00",
+                      "welcome_message": "Welcome to this project!",
+                      "slug": "1-create-a-project-plan-for-a-waste-on-water-geotagging-system",
+                      "title": "1 Create a project plan for a waste-on-water geotagging system",
+                      "description": "<p>We are launching an&nbsp;initiative to empower individuals to take photos of floating pollution and submit (via a geo-tagging system) their data to track the presence of waste on water which may justify the need for Seabins in the area.</p><p><br></p><p>We are looking for skilled volunteers to help create a project plan to design, build, test and launch this initiative.</p><p><br></p><p>Join this project to show your interest!</p><p><br></p>",
+                      "date_start": "2019-12-10T16:33:38.800000+11:00",
+                      "date_end": "2019-12-10T16:33:38.800000+11:00",
                       "date_closed": null,
                       "is_recurring": false,
                       "is_draft": false,
                       "is_closed": false,
-                      "created_by": 334,
-                      "modified_by": 334,
+                      "created_by": 400,
+                      "modified_by": 637,
                       "agreement": 1,
                       "goals": [],
                       "organisations": [],
                       "programs": [
-                        101
+                        269
                       ],
                       "tasks": [
                         {
-                          "id": 334,
-                          "created_time": "2020-03-17T23:04:32.240937+11:00",
-                          "modified_time": "2020-03-19T14:35:55.299430+11:00",
-                          "is_active": true,
-                          "title": "Start project",
-                          "description": "<p>This should be the first face-to-face or phone catchup between admins and volunteers. At the end of the catchup, everyone should agree to a list of tasks to be completed. Create these tasks in this project to track your progress.</p>",
-                          "created_by_id": null,
-                          "modified_by_id": null,
+                          "id": 530,
+                          "title": "Briefing and Scoping",
+                          "description": "",
                           "is_closed": false,
-                          "order": 3,
-                          "is_discontinued": false
-                        },
-                        {
-                          "id": 335,
-                          "created_time": "2020-03-17T23:04:32.252850+11:00",
-                          "modified_time": "2020-03-17T23:04:32.252882+11:00",
+                          "is_discontinued": false,
+                          "created_time": "2019-12-11T14:55:16.199680+11:00",
+                          "modified_time": "2020-02-19T11:43:53.962614+11:00",
                           "is_active": true,
-                          "title": "Read background info",
-                          "description": "<p>Admins should upload information here for volunteers to read. Volunteers should read the information posted to prepare themselves for the project before it starts.</p>",
-                          "created_by_id": null,
-                          "modified_by_id": null,
-                          "is_closed": false,
-                          "order": 1,
-                          "is_discontinued": false
-                        },
-                        {
-                          "id": 336,
-                          "created_time": "2020-03-17T23:04:32.541679+11:00",
-                          "modified_time": "2020-03-19T14:35:55.295826+11:00",
-                          "is_active": true,
-                          "title": "Sample task",
-                          "description": "<p>This is a sample task. Create more if the project requires it. Volunteers should upload files to this task to be reviewed. Once the admin is happy with the task, the admin should mark the task as completed.</p>",
-                          "created_by_id": null,
-                          "modified_by_id": null,
-                          "is_closed": false,
-                          "order": 2,
-                          "is_discontinued": false
-                        },
-                        {
-                          "id": 337,
-                          "created_time": "2020-03-17T23:04:32.560559+11:00",
-                          "modified_time": "2020-03-17T23:04:32.560593+11:00",
-                          "is_active": true,
-                          "title": "Debrief session",
-                          "description": "<p>Once your tasks are completed, this should be a face-to-face or phone catchup to review the work completed. This is also a good opportunity for the admins to thank and recognise the contributions of the volunteers.</p>",
-                          "created_by_id": null,
-                          "modified_by_id": null,
-                          "is_closed": false,
-                          "order": 4,
-                          "is_discontinued": false
+                          "order": 0,
+                          "skills": [
+                            "Human resources",
+                            "Management & Strategy"
+                          ]
                         }
                       ]
                     }
@@ -1331,7 +1361,17 @@
             }
           },
           "description": "Provide post data with email and password"
-        }
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "description": ""
+          }
+        ]
       },
       "parameters": []
     }
