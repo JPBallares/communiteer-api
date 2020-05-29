@@ -17,26 +17,35 @@
     "is_active": {
       "type": "boolean"
     },
+    "welcome_message": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
     "title": {
       "type": "string"
-    },
-    "logo": {
-      "type": "string"
-    },
-    "website_url": {
-      "type": "string"
-    },
-    "is_invite_only": {
-      "type": "boolean"
     },
     "description": {
       "type": "string"
     },
-    "intro_message": {
+    "date_start": {
       "type": "string"
     },
-    "welcome_message": {
+    "date_end": {
       "type": "string"
+    },
+    "date_closed": {
+      "type": "string"
+    },
+    "is_recurring": {
+      "type": "boolean"
+    },
+    "is_draft": {
+      "type": "boolean"
+    },
+    "is_closed": {
+      "type": "boolean"
     }
   }
 }
