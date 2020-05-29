@@ -35,6 +35,9 @@
     "estimated_time": {
       "type": "number",
       "description": "Estimated hours to finish the task"
+    },
+    "completed_date": {
+      "type": "string"
     }
   }
 }
