@@ -1,0 +1,42 @@
+{
+  "title": "CommunityList",
+  "type": "object",
+  "x-tags": [
+    "Community"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "created_time": {
+      "type": "string"
+    },
+    "modified_time": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "is_invite_only": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "intro_message": {
+      "type": "string"
+    },
+    "welcome_message": {
+      "type": "string"
+    }
+  }
+}

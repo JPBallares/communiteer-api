@@ -26,30 +26,40 @@
       "type": "string"
     },
     "logo": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        },
-        "height": {
-          "type": "integer"
-        },
-        "width": {
-          "type": "integer"
-        }
-      }
+      "type": "string"
     },
     "title": {
       "type": "string"
     },
-    "goals[]": {
-      "$ref": "./Goal.v1.json"
+    "created_time": {
+      "type": "string"
     },
-    "type[]": {
-      "$ref": "./CommunityType.v1.json"
+    "modified_time": {
+      "type": "string"
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "$ref": "./Goal.v1.json"
+      }
+    },
+    "type": {
+      "type": "array",
+      "items": {
+        "$ref": "./CommunityType.v1.json"
+      }
+    },
+    "accounts": {
+      "type": "array",
+      "items": {
+        "$ref": "../accounts/UserList.v1.json"
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "$ref": "../projects/Project.v1.json"
+      }
     }
   }
 }

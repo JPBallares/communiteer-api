@@ -45,10 +45,16 @@
       "type": "string"
     },
     "attributes": {
-      "type": "string"
+      "type": "array",
+      "items": {
+        "$ref": "../communities/CommunityAttributes.v1.json"
+      }
     },
     "goals": {
-      "type": "string"
+      "type": "array",
+      "items": {
+        "$ref": "../communities/Goal.v1.json"
+      }
     },
     "G2G_user_id": {
       "type": "string"

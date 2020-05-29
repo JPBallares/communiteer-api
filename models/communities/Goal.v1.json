@@ -15,55 +15,13 @@
       "type": "string"
     },
     "logo": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        },
-        "width": {
-          "type": "integer"
-        },
-        "height": {
-          "type": "integer"
-        }
-      }
+      "type": "string"
     },
     "logo_inverse": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        },
-        "width": {
-          "type": "integer"
-        },
-        "height": {
-          "type": "integer"
-        }
-      }
+      "type": "string"
     },
     "logo_number": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        },
-        "width": {
-          "type": "string"
-        },
-        "height": {
-          "type": "string"
-        }
-      }
+      "type": "string"
     }
   }
 }

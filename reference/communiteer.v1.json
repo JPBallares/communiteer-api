@@ -36,7 +36,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "../models/communities/Community.v1.json"
+                    "$ref": "../models/communities/CommunityList.v1.json"
                   }
                 }
               }
@@ -605,7 +605,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/accounts/UserList.v1.json"
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/accounts/UserList.v1.json"
+                  }
                 },
                 "examples": {
                   "Example": {
@@ -902,7 +905,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/accounts/UserProfile.v1.json"
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/accounts/UserList.v1.json"
+                  }
                 },
                 "examples": {
                   "Example": {
@@ -1053,7 +1059,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/accounts/UserProfile.v1.json"
+                  "$ref": "../models/accounts/UserList.v1.json"
                 },
                 "examples": {
                   "Example": {
