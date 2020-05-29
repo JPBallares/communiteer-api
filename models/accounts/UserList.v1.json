@@ -1,0 +1,60 @@
+{
+  "title": "UserList",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "date_joined": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "profile_picture": {
+      "type": "string"
+    },
+    "preferred_name": {
+      "type": "string"
+    },
+    "secondary_email": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "number"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "region_nation": {
+      "type": "string"
+    },
+    "region_nation_subdivision": {
+      "type": "string"
+    },
+    "area_code": {
+      "type": "string"
+    },
+    "last_login": {
+      "type": "string"
+    },
+    "is_onboarded": {
+      "type": "string"
+    },
+    "attributes": {
+      "type": "string"
+    },
+    "goals": {
+      "type": "string"
+    },
+    "G2G_user_id": {
+      "type": "string"
+    },
+    "task_updatedate": {
+      "type": "string"
+    }
+  }
+}
