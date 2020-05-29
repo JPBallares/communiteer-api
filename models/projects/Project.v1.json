@@ -39,7 +39,7 @@
     "created_time": {
       "type": "string"
     },
-    "modified_time": {
+    "updated_time": {
       "type": "string"
     },
     "goals": {
