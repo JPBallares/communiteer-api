@@ -605,7 +605,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../serializers/accounts/UserList.v1.json"
+                  "$ref": "../models/accounts/UserList.v1.json"
                 },
                 "examples": {
                   "Example": {
