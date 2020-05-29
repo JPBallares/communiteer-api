@@ -1,0 +1,52 @@
+{
+  "title": "UserProfile",
+  "type": "object",
+  "description": "",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "secondary_email": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "area_code": {
+      "type": "string"
+    },
+    "profile_picture": {
+      "type": "string"
+    },
+    "goals[]": {
+      "$ref": "../communities/Goal.v1.json"
+    },
+    "skills[]": {
+      "$ref": "../communities/CommunityAttributes.v1.json"
+    },
+    "tasks_update_time ": {
+      "type": "string"
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "$ref": "./UserProject.v1.json"
+      }
+    }
+  }
+}

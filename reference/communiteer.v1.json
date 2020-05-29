@@ -605,7 +605,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/accounts/UserProfile.v1.json"
+                  "$ref": "../serializers/accounts/UserList.v1.json"
                 },
                 "examples": {
                   "Example": {
@@ -764,43 +764,30 @@
                   "Example": {
                     "value": {
                       "id": 334,
-                      "is_superuser": true,
                       "first_name": "Admin",
                       "last_name": "Justine",
-                      "is_staff": true,
-                      "is_active": true,
                       "date_joined": "2019-09-26T15:56:58+10:00",
                       "email": "adminjustine@gmail.com",
-                      "profile_picture": "https://comblob02.blob.core.windows.net/media-communiteer-com/Annotation_2020-02-26_132125.png",
+                      "profile_picture": "https://comblob02.blob.core.windows.net/media-communiteer-com/Annotation_2020-02-26_132125_0LTS9TG.png",
                       "username": null,
                       "preferred_name": "Admin Justine",
                       "secondary_email": null,
-                      "mobile": null,
+                      "mobile": "0123456789",
                       "linkedin": "",
-                      "region_nation": null,
+                      "region_nation": "Philippines",
                       "region_nation_subdivision": null,
-                      "area_code": null,
-                      "last_login": "2020-04-03T11:22:17.251381+11:00",
-                      "vol_availability": null,
-                      "vol_prefer_regular": null,
-                      "vol_prefer_episodic": null,
-                      "current_step": "2",
-                      "is_project_onboarded": false,
-                      "is_org_onboarded": false,
-                      "is_onboarded": true,
+                      "area_code": 2600,
+                      "last_login": "2020-05-29T13:01:33.622263+10:00",
                       "term_acceptance_date": "2019-09-26T15:56:59.018846+10:00",
-                      "is_org_admin": false,
-                      "is_new_to_community": false,
-                      "groups": [],
-                      "user_permissions": [],
                       "attributes": [
-                        67
+                        63,
+                        65
                       ],
                       "goals": [
-                        1,
                         3,
                         2
                       ],
+                      "G2G_user_id": null,
                       "private_message_received": 0,
                       "private_message_sent": 0,
                       "updated_profile_details": 0,
@@ -853,10 +840,26 @@
                             {
                               "id": 131,
                               "created_time": "2020-04-08T19:29:27.956744+10:00",
-                              "modified_time": "2020-04-08T19:30:19.853119+10:00",
+                              "modified_time": "2020-05-17T17:40:49.384195+10:00",
                               "is_active": true,
                               "opportunity_id": 287,
-                              "time_spent": 5
+                              "time_spent": 2.5
+                            },
+                            {
+                              "id": 135,
+                              "created_time": "2020-05-12T11:30:33.405561+10:00",
+                              "modified_time": "2020-05-12T11:30:33.405688+10:00",
+                              "is_active": false,
+                              "opportunity_id": 312,
+                              "time_spent": 0
+                            },
+                            {
+                              "id": 136,
+                              "created_time": "2020-05-12T11:48:26.420151+10:00",
+                              "modified_time": "2020-05-12T11:48:26.420195+10:00",
+                              "is_active": false,
+                              "opportunity_id": 313,
+                              "time_spent": 0
                             }
                           ]
                         }
