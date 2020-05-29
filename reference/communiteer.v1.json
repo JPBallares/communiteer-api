@@ -25,7 +25,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/communities/Community.v1.json"
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/communities/CommunityList.v1.json"
+                  }
                 }
               }
             }

@@ -60,6 +60,12 @@
       "items": {
         "$ref": "../projects/Project.v1.json"
       }
+    },
+    "communities": {
+      "type": "array",
+      "items": {
+        "$ref": "./CommunityList.v1.json"
+      }
     }
   }
 }
