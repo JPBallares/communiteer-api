@@ -18,8 +18,11 @@
     "is_discontinued": {
       "type": "boolean"
     },
-    "skills[]": {
-      "$ref": "../communities/CommunityAttributes.v1.json"
+    "skills": {
+      "type": "array",
+      "items": {
+        "$ref": "../communities/CommunityAttributes.v1.json"
+      }
     },
     "updated_time": {
       "type": "string",

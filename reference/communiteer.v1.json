@@ -182,7 +182,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/projects/Project.v1.json"
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/projects/ProjectList.v1.json"
+                  }
                 },
                 "examples": {
                   "Example": {
@@ -487,7 +490,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/projects/Project.v1.json"
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/projects/ProjectList.v1.json"
+                  }
                 },
                 "examples": {
                   "Example": {
@@ -1062,7 +1068,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/accounts/UserList.v1.json"
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/accounts/UserList.v1.json"
+                  }
                 },
                 "examples": {
                   "Example": {
@@ -1201,7 +1210,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/communities/Tasks.v1.json"
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/tasks/Tasks.v1.json"
+                  }
                 },
                 "examples": {}
               }
@@ -1267,13 +1279,40 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "properties": {
-                    "task": {
-                      "$ref": "../models/communities/Tasks.v1.json"
-                    },
-                    "hours_worked": {
-                      "type": "integer"
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "opportunity_id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "is_closed": {
+                        "type": "boolean"
+                      },
+                      "is_discontinued": {
+                        "type": "boolean"
+                      },
+                      "updated_time": {
+                        "type": "string"
+                      },
+                      "created_time": {
+                        "type": "string"
+                      },
+                      "hours_worked": {
+                        "type": "number"
+                      },
+                      "skills": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
                     }
                   }
                 },

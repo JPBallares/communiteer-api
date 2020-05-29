@@ -36,14 +36,35 @@
     "is_closed": {
       "type": "boolean"
     },
-    "goals[]": {
-      "$ref": "../communities/Goal.v1.json"
+    "created_time": {
+      "type": "string"
     },
-    "communities[]": {
-      "$ref": "../communities/Community.v1.json"
+    "modified_time": {
+      "type": "string"
     },
-    "tasks[]": {
-      "$ref": "../communities/Tasks.v1.json"
+    "goals": {
+      "type": "array",
+      "items": {
+        "$ref": "../communities/Goal.v1.json"
+      }
+    },
+    "communities": {
+      "type": "array",
+      "items": {
+        "$ref": "../communities/CommunityList.v1.json"
+      }
+    },
+    "accounts": {
+      "type": "array",
+      "items": {
+        "$ref": "../accounts/UserList.v1.json"
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "../tasks/Tasks.v1.json"
+      }
     }
   }
 }
