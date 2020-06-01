@@ -43,9 +43,6 @@
     "G2G_charity_id": {
       "type": "string"
     },
-    "G2G_share_with": {
-      "type": "boolean"
-    },
     "G2G_corporate_id": {
       "type": "string"
     },
