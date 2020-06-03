@@ -1255,7 +1255,7 @@
         ]
       }
     },
-    "/api/user/{user_id}/tasks": {
+    "/api/users/{user_id}/tasks": {
       "parameters": [
         {
           "schema": {
