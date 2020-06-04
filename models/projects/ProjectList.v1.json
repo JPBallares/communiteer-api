@@ -46,6 +46,12 @@
     },
     "is_closed": {
       "type": "boolean"
+    },
+    "communities": {
+      "type": "array",
+      "items": {
+        "$ref": "../communities/CommunityList.v1.json"
+      }
     }
   }
 }
