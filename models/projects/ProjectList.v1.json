@@ -52,6 +52,12 @@
       "items": {
         "$ref": "../communities/CommunityList.v1.json"
       }
+    },
+    "contentid": {
+      "type": "integer"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }

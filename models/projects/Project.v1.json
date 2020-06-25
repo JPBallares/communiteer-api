@@ -65,6 +65,12 @@
       "items": {
         "$ref": "../tasks/Tasks.v1.json"
       }
+    },
+    "contentid": {
+      "type": "integer"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
