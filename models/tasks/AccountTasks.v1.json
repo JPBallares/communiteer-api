@@ -1,0 +1,42 @@
+{
+  "title": "AccountTasks",
+  "type": "object",
+  "x-tags": [
+    "Tasks"
+  ],
+  "properties": {
+    "opportunity_id": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "is_closed": {
+      "type": "boolean"
+    },
+    "is_discontinued": {
+      "type": "boolean"
+    },
+    "updated_time": {
+      "type": "string"
+    },
+    "created_time": {
+      "type": "string"
+    },
+    "estimated_hours": {
+      "type": "number"
+    },
+    "hours_worked": {
+      "type": "number"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

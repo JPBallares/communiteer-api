@@ -1281,39 +1281,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "object",
-                    "properties": {
-                      "opportunity_id": {
-                        "type": "string"
-                      },
-                      "title": {
-                        "type": "string"
-                      },
-                      "description": {
-                        "type": "string"
-                      },
-                      "is_closed": {
-                        "type": "boolean"
-                      },
-                      "is_discontinued": {
-                        "type": "boolean"
-                      },
-                      "updated_time": {
-                        "type": "string"
-                      },
-                      "created_time": {
-                        "type": "string"
-                      },
-                      "hours_worked": {
-                        "type": "number"
-                      },
-                      "skills": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      }
-                    }
+                    "$ref": "../models/tasks/AccountTasks.v1.json"
                   }
                 },
                 "examples": {
