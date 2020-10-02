@@ -1,0 +1,391 @@
+{
+  "title": "Organisation",
+  "type": "object",
+  "x-tags": [
+    "Project"
+  ],
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "string"
+    },
+    "ABN": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "Is_paid": {
+      "type": "boolean"
+    },
+    "G2G_charity_id": {
+      "type": "string"
+    },
+    "G2G_corporate_id": {
+      "type": "string"
+    },
+    "Communities": {
+      "title": "Community",
+      "type": "object",
+      "description": "",
+      "x-examples": {},
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "welcome_message": {
+          "type": "string"
+        },
+        "intro_message": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "is_invite_only": {
+          "type": "boolean"
+        },
+        "website_url": {
+          "type": "string"
+        },
+        "intro_media": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "created_time": {
+          "type": "string"
+        },
+        "modified_time": {
+          "type": "string"
+        },
+        "is_paid": {
+          "type": "boolean"
+        },
+        "G2G_charity_id": {
+          "type": "string"
+        },
+        "G2G_corporate_id": {
+          "type": "string"
+        },
+        "goals": {
+          "type": "array",
+          "items": {
+            "title": "Goal",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string"
+              },
+              "number": {
+                "type": "integer"
+              },
+              "description": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "logo_inverse": {
+                "type": "string"
+              },
+              "logo_number": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "type": {
+          "type": "array",
+          "items": {
+            "title": "CommunityType",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "accounts": {
+          "type": "array",
+          "items": {
+            "title": "UserList",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "first_name": {
+                "type": "string"
+              },
+              "date_joined": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "profile_picture": {
+                "type": "string"
+              },
+              "preferred_name": {
+                "type": "string"
+              },
+              "secondary_email": {
+                "type": "string"
+              },
+              "mobile": {
+                "type": "integer"
+              },
+              "linkedin": {
+                "type": "string"
+              },
+              "region_nation": {
+                "type": "string"
+              },
+              "region_nation_subdivision": {
+                "type": "string"
+              },
+              "area_code": {
+                "type": "string"
+              },
+              "last_login": {
+                "type": "string"
+              },
+              "is_onboarded": {
+                "type": "string"
+              },
+              "attributes": {
+                "type": "array",
+                "items": {
+                  "title": "CommunityAttributes",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "goals": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/Communities/properties/goals/items"
+                }
+              },
+              "G2G_user_id": {
+                "type": "string"
+              },
+              "task_updatedate": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "title": "Project",
+            "type": "object",
+            "x-examples": {},
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "welcome_message": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "date_start": {
+                "type": "string"
+              },
+              "date_end": {
+                "type": "string"
+              },
+              "date_closed": {
+                "type": "string"
+              },
+              "is_recurring": {
+                "type": "boolean"
+              },
+              "is_draft": {
+                "type": "boolean"
+              },
+              "is_closed": {
+                "type": "boolean"
+              },
+              "created_time": {
+                "type": "string"
+              },
+              "updated_time": {
+                "type": "string"
+              },
+              "goals": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/Communities/properties/goals/items"
+                }
+              },
+              "communities": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/Communities/properties/communities/items"
+                }
+              },
+              "accounts": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/Communities/properties/accounts/items"
+                }
+              },
+              "tasks": {
+                "type": "array",
+                "items": {
+                  "title": "Tasks",
+                  "type": "object",
+                  "description": "",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "is_closed": {
+                      "type": "boolean"
+                    },
+                    "is_discontinued": {
+                      "type": "boolean"
+                    },
+                    "skills": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/properties/Communities/properties/accounts/items/properties/attributes/items"
+                      }
+                    },
+                    "updated_time": {
+                      "type": "string",
+                      "description": "Date and time when the task was last updated"
+                    },
+                    "created_time": {
+                      "type": "string",
+                      "description": "Date and time when the task was created"
+                    },
+                    "estimated_hours": {
+                      "type": "number",
+                      "description": "Estimated hours to finish the task"
+                    },
+                    "completed_date": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "contentid": {
+                "type": "integer"
+              },
+              "url": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "communities": {
+          "type": "array",
+          "items": {
+            "title": "CommunityList",
+            "type": "object",
+            "x-tags": [
+              "Community"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "created_time": {
+                "type": "string"
+              },
+              "modified_time": {
+                "type": "string"
+              },
+              "is_active": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "website_url": {
+                "type": "string"
+              },
+              "is_invite_only": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "intro_message": {
+                "type": "string"
+              },
+              "welcome_message": {
+                "type": "string"
+              },
+              "is_paid": {
+                "type": "boolean"
+              },
+              "G2G_charity_id": {
+                "type": "string"
+              },
+              "G2G_corporate_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Subscription": {
+      "type": "string"
+    }
+  }
+}
