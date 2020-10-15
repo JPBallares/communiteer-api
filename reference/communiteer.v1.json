@@ -1439,16 +1439,6 @@
             "Authorization": []
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {}
-              }
-            }
-          }
-        },
         "parameters": [
           {
             "schema": {
