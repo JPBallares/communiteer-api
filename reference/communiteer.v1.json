@@ -1425,6 +1425,17 @@
                         "is_featured_on_affiliator_community": false,
                         "createddate": "2020-10-09T15:25:59.490658+11:00",
                         "updateddate": "2020-10-09T15:25:59.490658+11:00"
+                      },
+                      {
+                        "id": 424,
+                        "is_active": true,
+                        "affiliator_community_id": 119,
+                        "affiliatee_community_id": 94,
+                        "share_content_from_affiliator_to_affiliatee": false,
+                        "show_content_from_affiliatee_to_affiliator": false,
+                        "is_featured_on_affiliator_community": false,
+                        "createddate": "2020-10-11T15:25:59.490658+11:00",
+                        "updateddate": "2020-10-11T15:25:59.490658+11:00"
                       }
                     ]
                   }
