@@ -1464,23 +1464,35 @@
               "example": "filter=id"
             },
             "in": "query",
-            "name": "filter"
+            "name": "filter",
+            "description": "Filter results by the specified field"
           },
           {
             "schema": {
               "type": "string"
             },
             "in": "query",
-            "name": "gt"
+            "name": "gt",
+            "description": "Show results greater than the value based on the selected filter"
           },
           {
             "schema": {
               "type": "string"
             },
             "in": "query",
-            "name": "lt"
+            "name": "lt",
+            "description": "Show results less than the value based on the selected filter"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "equals",
+            "description": "Show results equals to the value based on the selected filter, will not work with `gt` or `lt`"
           }
-        ]
+        ],
+        "description": "Get all community affiliations on the system"
       }
     }
   },
