@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "description": "",
+      "description": "For testing",
       "url": "https://staging.communiteer.org"
     }
   ],
@@ -1393,6 +1393,94 @@
         ]
       },
       "parameters": []
+    },
+    "/api/communities/affiliations/": {
+      "get": {
+        "summary": "Get Community Affiliations",
+        "tags": [
+          "Associations",
+          "Community"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/associations/AssocCommunityCommunity.v1.json"
+                  }
+                },
+                "examples": {
+                  "Example": {
+                    "value": [
+                      {
+                        "id": 425,
+                        "is_active": true,
+                        "affiliator_community_id": 96,
+                        "affiliatee_community_id": 119,
+                        "share_content_from_affiliator_to_affiliatee": true,
+                        "show_content_from_affiliatee_to_affiliator": true,
+                        "is_featured_on_affiliator_community": false,
+                        "createddate": "2020-10-09T15:25:59.490658+11:00",
+                        "updateddate": "2020-10-09T15:25:59.490658+11:00"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-communities-affiliations",
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "id",
+                "createddate",
+                "updateddate",
+                "affiliator_community_id",
+                "affiliatee_community_id"
+              ],
+              "example": "filter=id"
+            },
+            "in": "query",
+            "name": "filter"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "gt"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "lt"
+          }
+        ]
+      }
     }
   },
   "components": {

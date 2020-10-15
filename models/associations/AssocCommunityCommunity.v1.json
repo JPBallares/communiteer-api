@@ -1,0 +1,39 @@
+{
+  "title": "AssocCommunityCommunity",
+  "type": "object",
+  "x-tags": [
+    "Associations",
+    "Community"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "affiliator_community_id": {
+      "type": "integer",
+      "description": ""
+    },
+    "affiliatee_community_id": {
+      "type": "number",
+      "description": ""
+    },
+    "share_content_from_affiliator_to_affiliatee": {
+      "type": "boolean"
+    },
+    "show_content_from_affiliatee_to_affiliator": {
+      "type": "boolean"
+    },
+    "is_featured_on_affiliator_community": {
+      "type": "boolean"
+    },
+    "createddate": {
+      "type": "string"
+    },
+    "updateddate": {
+      "type": "string"
+    }
+  }
+}
