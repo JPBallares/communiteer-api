@@ -1494,6 +1494,104 @@
         ],
         "description": "Get all community affiliations on the system"
       }
+    },
+    "/api/organisations/": {
+      "get": {
+        "summary": "Get Organisations",
+        "tags": [
+          "organisations"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../models/organisations/Organisation.v1.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-organisations",
+        "description": "Get all organisations",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "id",
+                "createddate",
+                "updateddate"
+              ]
+            },
+            "in": "query",
+            "name": "filter",
+            "description": "Filter results by the specified field"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "gt",
+            "description": "Show results greater than the value based on the selected filter"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "lt",
+            "description": "Show results less than the value based on the selected filter"
+          }
+        ],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      },
+      "parameters": []
+    },
+    "/api/organisations/{organisation_id}/": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "organisation_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get organisation details",
+        "tags": [
+          "organisations"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../models/organisations/Organisation.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-api-organisations-organisation_id",
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
     }
   },
   "components": {
