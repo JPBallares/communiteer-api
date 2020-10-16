@@ -47,6 +47,18 @@
     "is_closed": {
       "type": "boolean"
     },
+    "opportunity_type": {
+      "type": "string"
+    },
+    "commitment": {
+      "type": "string"
+    },
+    "commitment_period": {
+      "type": "string"
+    },
+    "volunteers_required": {
+      "type": "integer"
+    },
     "communities": {
       "type": "array",
       "items": {

@@ -171,7 +171,7 @@
     },
     "/api/projects/": {
       "get": {
-        "summary": "Get project list",
+        "summary": "Get opportunities list",
         "tags": [
           "Project",
           "End Points"
@@ -222,7 +222,7 @@
           }
         },
         "operationId": "get-api-projects",
-        "description": "Retrieve all available projects",
+        "description": "Retrieve all available opportunities",
         "security": [
           {
             "Authorization": []
@@ -290,6 +290,19 @@
             "in": "query",
             "name": "gt",
             "description": "End range for filter (only needed if using filter as param)"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "project",
+                "event",
+                "role"
+              ]
+            },
+            "in": "query",
+            "name": "opportunity_type",
+            "description": "Filter by type Role-based, Project-based, or Event-based\n"
           }
         ]
       },
@@ -307,7 +320,7 @@
         }
       ],
       "get": {
-        "summary": "Get project details",
+        "summary": "Get opportunities details",
         "tags": [
           "Project",
           "End Points"
@@ -459,7 +472,7 @@
           }
         },
         "operationId": "get-api-projects-project_id",
-        "description": "Retrieve specific project details",
+        "description": "Retrieve specific opportunity details",
         "security": [
           {
             "Authorization": []
@@ -479,7 +492,7 @@
         }
       ],
       "get": {
-        "summary": "Get community projects",
+        "summary": "Get community opportunities",
         "tags": [
           "Community",
           "End Points"
@@ -1056,7 +1069,7 @@
         }
       ],
       "get": {
-        "summary": "Get project members",
+        "summary": "Get opportunity members",
         "tags": [
           "Project",
           "Users",
@@ -1122,7 +1135,7 @@
           }
         },
         "operationId": "get-api-projects-project_id-users",
-        "description": "Retrieve the members of the project.",
+        "description": "Retrieve the members of the opportunity.",
         "security": [
           {
             "Authorization": []
@@ -1198,7 +1211,7 @@
         }
       ],
       "get": {
-        "summary": "Get project tasks",
+        "summary": "Get opportunity tasks",
         "tags": [
           "Project",
           "Tasks",
@@ -1221,7 +1234,7 @@
           }
         },
         "operationId": "get-api-projects-project_id-tasks",
-        "description": "Retrieve list of tasks in the project.",
+        "description": "Retrieve list of tasks in the opportunity.",
         "security": [
           {
             "Authorization": []
