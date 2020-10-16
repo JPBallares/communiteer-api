@@ -1499,7 +1499,7 @@
       "get": {
         "summary": "Get Organisations",
         "tags": [
-          "organisations"
+          "Organisations"
         ],
         "responses": {
           "200": {
@@ -1572,7 +1572,7 @@
       "get": {
         "summary": "Get organisation details",
         "tags": [
-          "organisations"
+          "Organisations"
         ],
         "responses": {
           "200": {
