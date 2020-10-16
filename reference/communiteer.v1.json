@@ -1565,7 +1565,8 @@
           },
           "name": "organisation_id",
           "in": "path",
-          "required": true
+          "required": true,
+          "description": "ID of the organisation that needs to be retrieved"
         }
       ],
       "get": {
@@ -1590,7 +1591,8 @@
           {
             "Authorization": []
           }
-        ]
+        ],
+        "description": "Get details of specified organisation"
       }
     }
   },
