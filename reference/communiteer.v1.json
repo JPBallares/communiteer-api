@@ -173,7 +173,7 @@
       "get": {
         "summary": "Get opportunities list",
         "tags": [
-          "Project",
+          "Opportunities",
           "End Points"
         ],
         "responses": {
@@ -322,7 +322,7 @@
       "get": {
         "summary": "Get opportunities details",
         "tags": [
-          "Project",
+          "Opportunities",
           "End Points"
         ],
         "responses": {
@@ -1071,7 +1071,7 @@
       "get": {
         "summary": "Get opportunity members",
         "tags": [
-          "Project",
+          "Opportunities",
           "Users",
           "End Points"
         ],
@@ -1213,7 +1213,7 @@
       "get": {
         "summary": "Get opportunity tasks",
         "tags": [
-          "Project",
+          "Opportunities",
           "Tasks",
           "End Points"
         ],
